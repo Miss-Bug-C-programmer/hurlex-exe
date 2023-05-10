@@ -1,7 +1,7 @@
 #ifndef INCLUDE_TYPES_H_
 #define INCLUDE_TYPES_H_
 
-#ifdef NULL
+#ifndef NULL
     #define NULL 0
 #endif
 
