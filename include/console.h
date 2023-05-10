@@ -3,7 +3,8 @@
 
 #include "types.h"
 
-typedef real_color{
+typedef 
+enum real_color{
     rc_black = 0,
     rc_blue = 1,
     rc_green = 2,

@@ -10,16 +10,16 @@ inline uint8_t inb(uint16_t port)
 {
     uint8_t ret;
 
-    asm volatile ("inb %1 %0" : "=a" (ret) : "dN" (port));
+    asm volatile ("inb %1, %0" : "=a" (ret) : "dN" (port));
 
-    retur ret;
+    return ret;
 }
 //端口读一个字
 inline uint16_t inw(uint16_t port)
 {
     uint16_t ret;
 
-    asm volatile ("inw %1 %0" : "=a" (ret) : "dN" (port));
+    asm volatile ("inw %1, %0" : "=a" (ret) : "dN" (port));
 
     return ret;
 }
