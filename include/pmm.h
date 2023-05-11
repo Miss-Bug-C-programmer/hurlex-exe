@@ -23,6 +23,7 @@
 extern uint8_t kern_start[];
 extern uint8_t kern_end[];
 
+extern uint32_t kern_stack_top;
 // 动态分配物理内存页的总数
 extern uint32_t phy_page_count;
 
